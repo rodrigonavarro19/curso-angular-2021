@@ -1,0 +1,27 @@
+<!-- <ul>
+    <li *ngFor="let gifs of resultados">
+        {{gifs.images.fixed_height_small.url}}
+    </li>
+</ul>> -->
+
+<div class="row">
+    <div *ngFor="let gifs of resultados" class="col-md-4 col-sm-6">
+        <div class="card">
+            <img    [src]="gifs.images.fixed_height_small.url" 
+                    [alt]="gifs.title"
+                    class="card-img-top"
+            >
+            <div class="card-body">
+                <div class="card-text">
+                    {{gifs.title}}
+                </div>
+               
+            
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

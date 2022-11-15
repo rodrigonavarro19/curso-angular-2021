@@ -1,0 +1,7 @@
+<h1>Ciclo de vide de Angular</h1>
+<hr>
+
+<button (click)="mostrar= !mostrar ">
+  {{(mostrar)?'Ocultar':'Mostrar'}}
+</button>
+<app-pagina *ngIf="mostrar"></app-pagina>
